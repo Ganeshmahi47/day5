@@ -1,0 +1,40 @@
+class,constructor, OOP, this keyword, new keyword, prototype.
+
+OOP=> Object oriented programming 
+
+js is also a object oriented program.
+
+js is converted into class based programming to achieve some limitation in OOP of JS.
+objects, classes, inheritance.
+
+what is prototype?
+
+prototype:
+every object in Js has a inbuilt property. this is called prototype.
+
+limitation=> we cant get the old details of the wholesome datas. by using class constructor method , 
+we can inherit the properties of the prototype of JS.
+
+classes:
+class is always have a constructor and a function in it.  
+constructor holds the parameters.
+all the variables are putting inside the constructor. c\
+
+syntax:
+class classname{
+    constructor(parameters){
+    this.value=value;
+}
+}
+
+we should create instances.
+
+this:
+this is a important keyword in class constructor method.
+it refers the object.
+it scopes is based on where it is invoked and occured.
+
+getter and setter
+
+class is generic
+values is dynamic

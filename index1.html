@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const array = ['one','two','three']
+    console.log(array);
+
+    //same result as above
+
+    const array1 = new Array ('one','two','three');
+    console.log(array1);
+
+//traditional method:
+
+let bike = {
+    name:"Yamaha",
+    making:"2020",
+    Price:"150000",
+
+getBikeDetails:function(){
+    return (`The name of the bike is ${bike.name} with Price of Rs.${bike.Price}`)
+}
+}
+//bike.name= "Suzuki";
+console.log(bike.getBikeDetails())
+
+
+// function Person (firstName, lastName,middleName){
+//     this.firstName= firstName;
+//     this.lastName = lastName;
+//     this.middleName= middleName;
+// }
+
+// let person1detail = new Person ("Guvi","Classes","chennai");
+// let person2detail = new Person ("monisha","FSD", "chennai");
+// let person3detail = new Person ("saravana","Fullstack","mumbai");
+// let person4detail = new Person ("Ishwarya","Mernstack","kolkata");
+
+// console.log(person1detail);
+
+//--------------------
+var a=[];
+class Person{
+    constructor(firstName,lastName,age,place){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.age=age;
+        this.place=place;
+    }
+    getDetails(){
+        return (`The name of the person is ${this.firstName} ${this.lastName} with age of ${this.age} born at ${this.place}`)
+}
+getAllNames(){
+    return(`All the Names are ${this.firstName}`)
+}
+    }
+
+let person1 = new Person ("Guvi","Classes","20","chennai");
+let person2 = new Person ("monisha","FSD","21", "chennai");
+let person3 = new Person ("saravana","Fullstack","22","mumbai");
+
+a[0] = new Person ("Guvi","Classes","20","chennai");
+a[1] = new Person ("monisha","FSD","21", "chennai");
+a[2] = new Person ("saravana","Fullstack","22","mumbai");
+
+for (let i=0; i<a.length;i++){
+    console.log(a[i].firstName)
+}
+
+//i need details of person2
+// i need all names 
+
+console.log(person2.getDetails());
+console.log(person1.firstName,person2.firstName,person3.firstName)
+
+
+    </script>
+</body>
+</html> 
